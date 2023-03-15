@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('carros', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('marca');
+            $table->date('data_fabricacao');
+            $table->string('cor');
+            $table->text('carrografia');
+            $table->string('foto')->nullable()->default('');
+
             $table->timestamps();
         });
     }

@@ -14,7 +14,9 @@ class Marca extends Model
 
     // Indica os campos que podem ser preenchidos pelo usuário
     protected $fillable = [
-        'fabricante',
+        'nome',
+        'marca',
+        'data_fabricante',
         'ano',
         'cor',
         'carrografia',

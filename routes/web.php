@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\CarrosController;
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -23,7 +23,7 @@
                     <th>Foto</th>
                 </tr>
 
-                @foreach ($carros as $gato)
+                @foreach ($carros as $carro)
                     <tr>
                         <td>{{ $carro->nome }}</td>
                         <td>{{ $carro->marca }}</td>

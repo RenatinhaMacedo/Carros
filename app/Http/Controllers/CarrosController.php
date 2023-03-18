@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Carro;
 
 class CarrosController extends Controller
 {
@@ -11,7 +12,10 @@ class CarrosController extends Controller
      */
     public function index()
     {
-        //
+        // Pega todos os registos da tabela relacionada ao modelo Gato
+        $carros = Carro::all();
+
+        return view('carros.index', compact('carros'));
     }
 
     /**

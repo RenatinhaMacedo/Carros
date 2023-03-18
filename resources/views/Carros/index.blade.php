@@ -17,7 +17,6 @@
                     <th>Nome</th>
                     <th>Marca</th>
                     <th>Data Fabricação</th>
-                    <th>Ano</th>
                     <th>Cor</th>
                     <th>Carrografia</th>
                     <th>Foto</th>
@@ -28,7 +27,6 @@
                         <td>{{ $carro->nome }}</td>
                         <td>{{ $carro->marca }}</td>
                         <td>{{ $carro->data_fabricante }}</td>
-                        <td>{{ $carro->ano }}</td>
                         <td>{{ $carro->cor }}</td>
                         <td>{{ $carro->carrografia }}</td>
                         <td>{{ $carro->foto }}</td>

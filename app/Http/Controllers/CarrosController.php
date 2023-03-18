@@ -8,26 +8,26 @@ use App\Models\Carro;
 class CarrosController extends Controller
 {
      /**
-     * Lista todos os gatos cadastrados
+     * Lista todos os carros cadastrados
      */
     public function index()
     {
-        // Pega todos os registos da tabela relacionada ao modelo Gato
+        // Pega todos os registos da tabela relacionada ao modelo carro
         $carros = Carro::all();
 
         return view('carros.index', compact('carros'));
     }
 
     /**
-     * Mostra o formulário para criar um novo gato
+     * Mostra o formulário para criar um novo carro
      */
     public function create()
     {
-        //
+        return view('carros.create');
     }
 
     /**
-     * Armazena um novo gato
+     * Armazena um novo carro
      */
     public function store(Request $request)
     {
@@ -35,7 +35,7 @@ class CarrosController extends Controller
     }
 
     /**
-     * Mostra um gato específico
+     * Mostra um carro específico
      */
     public function show($id)
     {
@@ -43,7 +43,7 @@ class CarrosController extends Controller
     }
 
     /**
-     * Mostra o formulário para editar um gato específico
+     * Mostra o formulário para editar um carro específico
      */
     public function edit($id)
     {
@@ -51,7 +51,7 @@ class CarrosController extends Controller
     }
 
     /**
-     * Atualiza um gato específico
+     * Atualiza um carro específico
      */
     public function update(Request $request, $id)
     {
@@ -59,7 +59,7 @@ class CarrosController extends Controller
     }
 
     /**
-     * Remove um gato específico
+     * Remove um carro específico
      */
     public function destroy($id)
     {

@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/carros', [CarrosController::class, 'index'])->name('carros.index');
 
 // Rota para o formulário de criação de carros
-Route::get('/carros/create', [CarrosController::class, 'create'])->name('carros.create');
+Route::get('/carros/novo', [CarrosController::class, 'create'])->name('carros.novo');
 
 // Rota para o mostrar um carros específico
 Route::get('/carros/{id}', [CarrosController::class, 'show'])->name('carros.show');

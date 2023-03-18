@@ -17,7 +17,6 @@ class Carro extends Model
         'nome',
         'marca',
         'data_fabricante',
-        'ano',
         'cor',
         'carrografia',
         'foto'

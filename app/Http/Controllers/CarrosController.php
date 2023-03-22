@@ -29,9 +29,23 @@ class CarrosController extends Controller
     /**
      * Armazena um novo carro
      */
-    public function store(Request $request)
+    public function store(Request $requisicao)
     {
-        //
+        //// Cria um novo objeto do tipo Gato em branco
+        $carro = new Carro();
+
+        // Preenche os campos do objeto com os dados da requisição
+        $carro->nome = $requisicao->nome;
+        $carro->marca = $requisicao->raca;
+        $carro->data_fabricante = $requisicao->idade;
+        $carro->cor = $requisicao->cor;
+        $carro->gatografia = $requisicao->gatografia;
+
+        // Salva o objeto no banco de dados
+        $carro->save();
+
+        // Redireciona para a página de detalhes do gato
+        return redirect()->route('carro.show', $carro->id);
     }
 
     /**

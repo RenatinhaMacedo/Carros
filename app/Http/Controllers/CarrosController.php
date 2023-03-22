@@ -37,7 +37,7 @@ class CarrosController extends Controller
         // Preenche os campos do objeto com os dados da requisição
         $carro->nome = $requisicao->nome;
         $carro->marca = $requisicao->marca;
-        $carro->data = $requisicao->data;
+        $carro->data_fabricacao = $requisicao->data_fabricacao;
         $carro->cor = $requisicao->cor;
         $carro->carrografia = $requisicao->carrografia;
 
@@ -45,7 +45,7 @@ class CarrosController extends Controller
         $carro->save();
 
         // Redireciona para a página de detalhes do gato
-        return redirect()->route('carro.show', $carro->id);
+        return redirect()->route('carros.show', $carro->id);
     }
 
     /**

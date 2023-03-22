@@ -27,7 +27,7 @@
 
                 <div class="mb-3">
                     <label>Data Fabricação</label>
-                    <input type="date" name="data" class="form-control">
+                    <input type="date" name="data_fabricacao" class="form-control">
                 </div>
 
                 <div class="mb-3">
@@ -37,7 +37,7 @@
 
                 <div class="mb-3">
                     <label>Carrografia</label>
-                    <textarea name="gatografia" id="" rows="5" class="form-control"></textarea>
+                    <textarea name="carrografia" id="" rows="5" class="form-control"></textarea>
                 </div>
 
                 <div>

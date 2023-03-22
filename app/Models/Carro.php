@@ -16,7 +16,7 @@ class Carro extends Model
     protected $fillable = [
         'nome',
         'marca',
-        'data',
+        'data_fabricacao',
         'cor',
         'carrografia'
     ];

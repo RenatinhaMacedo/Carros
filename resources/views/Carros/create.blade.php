@@ -27,7 +27,7 @@
 
                 <div class="mb-3">
                     <label>Data Fabricação</label>
-                    <input type="date" name="data_fabricante" class="form-control">
+                    <input type="date" name="data" class="form-control">
                 </div>
 
                 <div class="mb-3">

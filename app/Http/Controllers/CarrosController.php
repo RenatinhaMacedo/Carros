@@ -36,10 +36,10 @@ class CarrosController extends Controller
 
         // Preenche os campos do objeto com os dados da requisição
         $carro->nome = $requisicao->nome;
-        $carro->marca = $requisicao->raca;
-        $carro->data_fabricante = $requisicao->idade;
+        $carro->marca = $requisicao->marca;
+        $carro->data = $requisicao->data;
         $carro->cor = $requisicao->cor;
-        $carro->gatografia = $requisicao->gatografia;
+        $carro->carrografia = $requisicao->carrografia;
 
         // Salva o objeto no banco de dados
         $carro->save();

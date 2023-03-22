@@ -19,17 +19,15 @@
                     <th>Data Fabricação</th>
                     <th>Cor</th>
                     <th>Carrografia</th>
-                    <th>Foto</th>
                 </tr>
 
                 @foreach ($carros as $carro)
                     <tr>
                         <td>{{ $carro->nome }}</td>
                         <td>{{ $carro->marca }}</td>
-                        <td>{{ $carro->data_fabricante }}</td>
+                        <td>{{ $carro->data }}</td>
                         <td>{{ $carro->cor }}</td>
                         <td>{{ $carro->carrografia }}</td>
-                        <td>{{ $carro->foto }}</td>
                         <td></td>
                     </tr>
                 @endforeach

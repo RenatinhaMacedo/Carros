@@ -27,7 +27,7 @@
                     <tr>
                         <td>{{ $carro->nome }}</td>
                         <td>{{ $carro->marca }}</td>
-                        <td>{{ $carro->data }}</td>
+                        <td>{{ $carro->data_fabricacao }}</td>
                         <td>{{ $carro->cor }}</td>
                         <td>{{ $carro->carrografia }}</td>
                         <td>

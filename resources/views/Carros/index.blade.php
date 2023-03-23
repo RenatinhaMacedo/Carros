@@ -30,7 +30,10 @@
                         <td>{{ $carro->data }}</td>
                         <td>{{ $carro->cor }}</td>
                         <td>{{ $carro->carrografia }}</td>
-                        <td></td>
+                        <td>
+                            <a class="link" href="{{ route('carros.show', $carro->id) }}"> VER
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
             </table>

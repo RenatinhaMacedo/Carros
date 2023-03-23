@@ -33,7 +33,7 @@ class CarrosController extends Controller
      */
     public function store(Request $requisicao)
     {
-
+        //// Cria um novo objeto do tipo Gato em branco
         $carro = new Carro();
 
         // Preenche os campos do objeto com os dados da requisição
@@ -53,9 +53,9 @@ class CarrosController extends Controller
     /**
      * Mostra um carro específico
      */
-    public function show($id)
+    public function show(Carro $carro)
     {
-        return 'Oi, sou o carro de id' . $id .'!';
+        return view('carros.view', compact('carro'));
     }
 
     /**

@@ -33,7 +33,7 @@ class CarrosController extends Controller
      */
     public function store(Request $requisicao)
     {
-        //// Cria um novo objeto do tipo Gato em branco
+
         $carro = new Carro();
 
         // Preenche os campos do objeto com os dados da requisição

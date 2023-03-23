@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Carro;
 
+use function PHPUnit\Framework\returnSelf;
+
 class CarrosController extends Controller
 {
      /**
@@ -53,7 +55,7 @@ class CarrosController extends Controller
      */
     public function show($id)
     {
-        //
+        return 'Oi, sou o carro de id' . $id .'!';
     }
 
     /**

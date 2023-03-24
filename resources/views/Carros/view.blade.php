@@ -14,7 +14,7 @@
 
             <h3>Data de Fabricação: {{ $carro->data_fabricacao }} </h3>
 
-            <h3>Pelos {{ $carro->cor }}</h3>
+            <h3>Cor: {{ $carro->cor }}</h3>
 
             <p>
                 {{ $carro->carrografia }}

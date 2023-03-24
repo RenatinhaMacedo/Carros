@@ -61,17 +61,19 @@ class CarrosController extends Controller
     /**
      * Mostra o formulário para editar um carro específico
      */
-    public function edit($id)
+    public function edit(Carro $carro)
     {
-        //
+        return view('carros.edit', compact('carro'));
     }
 
     /**
      * Atualiza um carro específico
      */
-    public function update(Request $request, $id)
+    public function update(Request $requisicao, Carro $carro)
     {
-        //
+        $carro->update($requisicao->all());
+
+        return redirect()->route('carros.show', $carro->id);
     }
 
     /**

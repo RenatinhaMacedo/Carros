@@ -29,13 +29,13 @@ Route::get('/carros/novo', [CarrosController::class, 'create'])->name('carros.no
 Route::get('/carros/{carro}', [CarrosController::class, 'show'])->name('carros.show');
 
 // Rota para o formulário de edição de carros
-Route::get('/carros/{id}/edit', [CarrosController::class, 'edit'])->name('carros.edit');
+Route::get('/carros/{carro}/editar', [CarrosController::class, 'edit'])->name('carros.edit');
 
 // Rota que armazena um novo carro no banco de dados
 Route::post('/carros', [CarrosController::class, 'store'])->name('carros.store');
 
 // Rota que atualiza um carro específico no banco de dados
-Route::put('/carros/{id}', [CarrosController::class, 'update'])->name('carros.update');
+Route::put('/carros/{carro}', [CarrosController::class, 'update'])->name('carros.update');
 
 // Rota que remove um carro específico do banco de dados
 Route::delete('/carros/{id}', [CarrosController::class, 'destroy'])->name('carros.destroy');

@@ -20,7 +20,15 @@
                 {{ $carro->carrografia }}
             </p>
 
-            <a href="{{ route('carros.index') }}">Voltar a lista</a>
+            <a class="btn btn-warning" href="{{ route('carros.index') }}">Voltar a lista</a>
+            <a class="btn btn-warning" href="{{ route('carros.edit', $carro->id) }}">Editar</a>
+
+            <form method="POST" action="{{ route('carros.destroy', $carro->id) }}">
+                @csrf
+                @method('DELETE')
+
+                <input type="submit" value="Excluir Carro" class="btn btn-danger">
+            </form>
         </div>
     </body>
 </html>

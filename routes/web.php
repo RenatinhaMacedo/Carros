@@ -38,5 +38,5 @@ Route::post('/carros', [CarrosController::class, 'store'])->name('carros.store')
 Route::put('/carros/{carro}', [CarrosController::class, 'update'])->name('carros.update');
 
 // Rota que remove um carro específico do banco de dados
-Route::delete('/carros/{id}', [CarrosController::class, 'destroy'])->name('carros.destroy');
+Route::delete('/carros/{carro}', [CarrosController::class, 'destroy'])->name('carros.destroy');
 

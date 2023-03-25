@@ -79,8 +79,10 @@ class CarrosController extends Controller
     /**
      * Remove um carro específico
      */
-    public function destroy($id)
+    public function destroy(Carro $carro)
     {
+        $carro->delete();
 
+        return redirect()->route('carros.index');
     }
 }
